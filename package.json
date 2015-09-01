@@ -1,14 +1,16 @@
 {
-  "name": "adhere",
+  "name": "adhere-common",
   "version": "0.1.0",
   "description": "Make objects adhere to a specification",
   "main": "index.js",
   "scripts": {
-    "test": "clear && mocha -R spec"
+    "build": "mkdirp dist && browserify index.js --standalone adhere --outfile dist/bundle.js",
+    "build-debug": "mkdirp dist && browserify index.js --standalone adhere --outfile dist/bundle.js --debug",
+    "test": "mocha lib/**/*.test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:mickvangelderen/adhere"
+    "url": "git@github.com:mickvangelderen/adhere-common"
   },
   "keywords": [
     "adhere",
@@ -22,7 +24,12 @@
     "url": "https://github.com/mickvangelderen/adhere/issues"
   },
   "homepage": "https://github.com/mickvangelderen/adhere",
+  "dependencies": {
+    "adhere-core": "^0.3.1"
+  },
   "devDependencies": {
-    "chai": "^1.10.0"
+    "chai": "^1.10.0",
+    "mkdirp": "^0.5.1",
+    "type-samples": "^0.1.0"
   }
 }

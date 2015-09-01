@@ -1,6 +1,7 @@
-var adhere = module.exports = require('./lib/adhere');
+var adhere = module.exports = require('adhere-core')
 
-adhere.coerce = require('./lib/coerce');
-adhere.compose = require('./lib/compose');
-adhere.expect = require('./lib/expect');
-adhere.is = require('./lib/is');
+adhere.clone = require('./lib/clone')
+adhere.each = require('./lib/each')
+adhere.expectify = require('./lib/expectify')
+adhere.filterify = require('./lib/filterify')
+adhere.is = require('./lib/is')
