@@ -21,9 +21,9 @@
   "author": "Mick van Gelderen",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mickvangelderen/adhere/issues"
+    "url": "https://github.com/mickvangelderen/adhere-common/issues"
   },
-  "homepage": "https://github.com/mickvangelderen/adhere",
+  "homepage": "https://github.com/mickvangelderen/adhere-common",
   "dependencies": {
     "adhere-core": "^0.3.1"
   },
